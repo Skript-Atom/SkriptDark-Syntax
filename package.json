@@ -1,0 +1,15 @@
+{
+  "name": "SkriptDark-Syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Default SkriptDark Theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/tim740/SkriptDark-Syntax",
+  "license": "GNU General Public License v3.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
