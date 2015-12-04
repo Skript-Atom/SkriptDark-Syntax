@@ -109,7 +109,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.numeric {
-    color: @orange;
+    color: @number;
   }
 
   &.other.color {
@@ -139,9 +139,12 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @green;
+  color: @text;
 
-
+  &.bracket.double.skript {
+    color: @variable;
+  }
+  
   &.regexp {
     color: @cyan;
 
