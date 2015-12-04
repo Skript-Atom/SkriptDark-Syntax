@@ -83,6 +83,60 @@ atom-text-editor .search-results .marker.current-result .region,
   &.control {
     color: @purple;
   }
+  &.player.skript {
+    color: @player;
+  }
+  &.exprwrap.skript {
+    color: @exprwrap;
+  }
+  &.mccolor.black.skript {
+    color: @mc-black;
+  }
+  &.mccolor.dark_blue.skript {
+    color: @mc-dark_blue;
+  }
+  &.mccolor.dark_green.skript {
+    color: @mc-dark_green;
+  }
+  &.mccolor.dark_aqua.skript {
+    color: @mc-dark_aqua;
+  }
+  &.mccolor.dark_red.skript {
+    color: @mc-dark_red;
+  }
+  &.mccolor.dark_purple.skript {
+    color: @mc-dark_purple;
+  }
+  &.mccolor.gold.skript {
+    color: @mc-gold;
+  }
+  &.mccolor.gray.skript {
+    color: @mc-gray;
+  }
+  &.mccolor.dark-gray.skript {
+    color: @mc-dark_gray;
+  }
+  &.mccolor.blue.skript {
+    color: @mc-blue;
+  }
+  &.mccolor.green.skript {
+    color: @mc-green;
+  }
+  &.mccolor.aqua.skript {
+    color: @mc-aqua;
+  }
+  &.mccolor.red.skript {
+    color: @mc-red;
+  }
+  &.mccolor.light_purple.skript {
+    color: @mc-light_purple;
+  }
+  &.mccolor.yellow.skript {
+    color: @mc-yellow;
+  }
+  &.mccolor.white.skript {
+    color: @mc-white;
+  }
 
   &.operator {
     color: @syntax-text-color;
@@ -124,6 +178,19 @@ atom-text-editor .search-results .marker.current-result .region,
 .variable {
   color: @red;
 
+  &.temp.skript {
+    color: @tempvar;
+  }
+  &.normal.skript {
+    color: @variable;
+  }
+  &.tempexpr.skript {
+    color: @exprwrap;
+  }
+  &.expr.skript {
+    color: @exprwrap;
+  }
+
   &.interpolation {
     color: darken(@red, 10%);
   }
@@ -141,10 +208,6 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @text;
 
-  &.bracket.double.skript {
-    color: @variable;
-  }
-  
   &.regexp {
     color: @cyan;
 
