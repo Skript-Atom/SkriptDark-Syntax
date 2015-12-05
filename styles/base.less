@@ -83,59 +83,91 @@ atom-text-editor .search-results .marker.current-result .region,
   &.control {
     color: @purple;
   }
-  &.player.skript {
-    color: @player;
+  &.else.skript {
+    color: @else;
+    text-decoration: underline;
   }
   &.exprwrap.skript {
     color: @exprwrap;
   }
-  &.mccolor.black.skript {
-    color: @mc-black;
+  &.type {
+    &.player.skript {
+      color: @player;
+    }
+    &.entity.skript {
+      color: @entity;
+    }
+    &.cmd.skript {
+      color: @cmd;
+    }
+    &.direction.skript {
+      color: @direction;
+    }
+    &.potion.skript {
+      color: @potion;
+    }
+    &.enchant.skript {
+      color: @enchant;
+    }
+    &.loop.skript {
+      color: @looptype;
+    }
+    &.event.skript {
+      color: @eventtype;
+    }
+    &.color.skript {
+      color: @color;
+    }
   }
-  &.mccolor.dark_blue.skript {
-    color: @mc-dark_blue;
-  }
-  &.mccolor.dark_green.skript {
-    color: @mc-dark_green;
-  }
-  &.mccolor.dark_aqua.skript {
-    color: @mc-dark_aqua;
-  }
-  &.mccolor.dark_red.skript {
-    color: @mc-dark_red;
-  }
-  &.mccolor.dark_purple.skript {
-    color: @mc-dark_purple;
-  }
-  &.mccolor.gold.skript {
-    color: @mc-gold;
-  }
-  &.mccolor.gray.skript {
-    color: @mc-gray;
-  }
-  &.mccolor.dark-gray.skript {
-    color: @mc-dark_gray;
-  }
-  &.mccolor.blue.skript {
-    color: @mc-blue;
-  }
-  &.mccolor.green.skript {
-    color: @mc-green;
-  }
-  &.mccolor.aqua.skript {
-    color: @mc-aqua;
-  }
-  &.mccolor.red.skript {
-    color: @mc-red;
-  }
-  &.mccolor.light_purple.skript {
-    color: @mc-light_purple;
-  }
-  &.mccolor.yellow.skript {
-    color: @mc-yellow;
-  }
-  &.mccolor.white.skript {
-    color: @mc-white;
+  &.mccolor {
+    &.black.skript {
+      color: @mc-black;
+    }
+    &.dark_blue.skript {
+      color: @mc-dark_blue;
+    }
+    &.dark_green.skript {
+      color: @mc-dark_green;
+    }
+    &.dark_aqua.skript {
+      color: @mc-dark_aqua;
+    }
+    &.dark_red.skript {
+      color: @mc-dark_red;
+    }
+    &.dark_purple.skript {
+      color: @mc-dark_purple;
+    }
+    &.gold.skript {
+      color: @mc-gold;
+    }
+    &.gray.skript {
+      color: @mc-gray;
+    }
+    &.dark-gray.skript {
+      color: @mc-dark_gray;
+    }
+    &.blue.skript {
+      color: @mc-blue;
+    }
+    &.green.skript {
+      color: @mc-green;
+    }
+    &.aqua.skript {
+      color: @mc-aqua;
+    }
+    &.red.skript {
+      color: @mc-red;
+    }
+    &.light_purple.skript {
+      color: @mc-light_purple;
+    }
+    &.yellow.skript {
+      color: @mc-yellow;
+    }
+    &.white.skript {
+      color: @mc-white;
+    }
   }
 
   &.operator {
@@ -206,7 +238,11 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @text;
+  color: @purple;
+
+  &.quoted.double.skript {
+    color: @text;
+  }
 
   &.regexp {
     color: @cyan;
