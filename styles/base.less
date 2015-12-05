@@ -87,9 +87,6 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @else;
     text-decoration: underline;
   }
-  &.exprwrap.skript {
-    color: @exprwrap;
-  }
   &.type {
     &.player.skript {
       color: @player;
@@ -169,6 +166,36 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @mc-white;
     }
   }
+  &.addon {
+    &.type {
+      &.randomsk.skript,
+      &.skquery.skirpt,
+      &.skrambled.skirpt,
+      &.skrayfall.skirpt,
+      &.skrpg.skirpt,
+      &.main.skript {
+        color: @types;
+      }
+    }
+    &.event {
+      &.main.skript {
+        color: @event;
+        text-decoration: underline;
+      }
+//    &.condition {
+//      &.main.skript {
+//        color: @condition;
+//      }
+//    &.effect {
+//      &.main.skript {
+//        color: @effect;
+//      }
+//    &.expression {
+//      &.main.skript {
+//        color: @expression;
+//      }
+    }
+  }
 
   &.operator {
     color: @syntax-text-color;
@@ -216,10 +243,7 @@ atom-text-editor .search-results .marker.current-result .region,
   &.normal.skript {
     color: @variable;
   }
-  &.tempexpr.skript {
-    color: @exprwrap;
-  }
-  &.expr.skript {
+  &.exprwrap.skript {
     color: @exprwrap;
   }
 
