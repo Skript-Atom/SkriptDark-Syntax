@@ -170,6 +170,12 @@ atom-text-editor .search-results .marker.current-result .region,
       }
     }
     &.addon {
+      &.event {
+        &.main {
+          color: @event;
+          text-decoration: underline;
+        }
+      }
       &.type {
         &.randomsk,
         &.skquery,
@@ -180,23 +186,10 @@ atom-text-editor .search-results .marker.current-result .region,
           color: @types;
         }
       }
-      &.event {
+      &.effect {
         &.main {
-          color: @event;
-          text-decoration: underline;
+          color: @effect;
         }
-//      &.condition {
-//        &.main {
-//          color: @condition;
-//        }
-//      &.effect {
-//        &.main {
-//          color: @effect;
-//        }
-//      &.expression {
-//        &.main {
-//          color: @expression;
-//        }
       }
     }
   }
