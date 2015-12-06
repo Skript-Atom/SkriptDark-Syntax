@@ -79,121 +79,125 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .keyword {
   color: @purple;
-
   &.control {
     color: @purple;
   }
-  &.else.skript {
-    color: @else;
-    text-decoration: underline;
-  }
-  &.type {
-    &.player.skript {
-      color: @player;
+  &.skript {
+    &.else {
+      color: @else;
+      text-decoration: underline;
     }
-    &.entity.skript {
-      color: @entity;
-    }
-    &.cmd.skript {
-      color: @cmd;
-    }
-    &.direction.skript {
-      color: @direction;
-    }
-    &.potion.skript {
-      color: @potion;
-    }
-    &.enchant.skript {
-      color: @enchant;
-    }
-    &.loop.skript {
-      color: @looptype;
-    }
-    &.event.skript {
-      color: @eventtype;
-    }
-    &.color.skript {
-      color: @color;
-    }
-  }
-  &.mccolor {
-    &.black.skript {
-      color: @mc-black;
-    }
-    &.dark_blue.skript {
-      color: @mc-dark_blue;
-    }
-    &.dark_green.skript {
-      color: @mc-dark_green;
-    }
-    &.dark_aqua.skript {
-      color: @mc-dark_aqua;
-    }
-    &.dark_red.skript {
-      color: @mc-dark_red;
-    }
-    &.dark_purple.skript {
-      color: @mc-dark_purple;
-    }
-    &.gold.skript {
-      color: @mc-gold;
-    }
-    &.gray.skript {
-      color: @mc-gray;
-    }
-    &.dark-gray.skript {
-      color: @mc-dark_gray;
-    }
-    &.blue.skript {
-      color: @mc-blue;
-    }
-    &.green.skript {
-      color: @mc-green;
-    }
-    &.aqua.skript {
-      color: @mc-aqua;
-    }
-    &.red.skript {
-      color: @mc-red;
-    }
-    &.light_purple.skript {
-      color: @mc-light_purple;
-    }
-    &.yellow.skript {
-      color: @mc-yellow;
-    }
-    &.white.skript {
-      color: @mc-white;
-    }
-  }
-  &.addon {
     &.type {
-      &.randomsk.skript,
-      &.skquery.skirpt,
-      &.skrambled.skirpt,
-      &.skrayfall.skirpt,
-      &.skrpg.skirpt,
-      &.main.skript {
-        color: @types;
+      &.player {
+        color: @player;
+      }
+      &.entity {
+        color: @entity;
+      }
+      &.cmd {
+        color: @cmd;
+      }
+      &.direction {
+        color: @direction;
+      }
+      &.potion {
+        color: @potion;
+      }
+      &.enchant {
+        color: @enchant;
+      }
+      &.loop {
+        color: @looptype;
+      }
+      &.event {
+        color: @eventtype;
+      }
+      &.color {
+        color: @color;
+      }
+      &.timespan {
+        color: @timespan;
       }
     }
-    &.event {
-      &.main.skript {
-        color: @event;
-        text-decoration: underline;
+    &.mccolor {
+      &.black {
+        color: @mc-black;
       }
-//    &.condition {
-//      &.main.skript {
-//        color: @condition;
-//      }
-//    &.effect {
-//      &.main.skript {
-//        color: @effect;
-//      }
-//    &.expression {
-//      &.main.skript {
-//        color: @expression;
-//      }
+      &.dark_blue {
+        color: @mc-dark_blue;
+      }
+      &.dark_green {
+        color: @mc-dark_green;
+      }
+      &.dark_aqua {
+        color: @mc-dark_aqua;
+      }
+      &.dark_red {
+        color: @mc-dark_red;
+      }
+      &.dark_purple {
+        color: @mc-dark_purple;
+      }
+      &.gold {
+        color: @mc-gold;
+      }
+      &.gray {
+        color: @mc-gray;
+      }
+      &.dark-gray {
+        color: @mc-dark_gray;
+      }
+      &.blue {
+        color: @mc-blue;
+      }
+      &.green {
+        color: @mc-green;
+      }
+      &.aqua {
+        color: @mc-aqua;
+      }
+      &.red {
+        color: @mc-red;
+      }
+      &.light_purple {
+        color: @mc-light_purple;
+      }
+      &.yellow {
+        color: @mc-yellow;
+      }
+      &.white {
+        color: @mc-white;
+      }
+    }
+    &.addon {
+      &.type {
+        &.randomsk,
+        &.skquery,
+        &.skrambled,
+        &.skrayfall,
+        &.skrpg,
+        &.main {
+          color: @types;
+        }
+      }
+      &.event {
+        &.main {
+          color: @event;
+          text-decoration: underline;
+        }
+//      &.condition {
+//        &.main {
+//          color: @condition;
+//        }
+//      &.effect {
+//        &.main {
+//          color: @effect;
+//        }
+//      &.expression {
+//        &.main {
+//          color: @expression;
+//        }
+      }
     }
   }
 
@@ -216,6 +220,14 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .constant {
   color: @orange;
+  &.skript {
+    &.character.escape {
+      color: @cyan;
+    }
+    &.numeric {
+      color: @number;
+    }
+  }
 
   &.character.escape {
     color: @cyan;
@@ -236,15 +248,22 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .variable {
   color: @red;
-
-  &.temp.skript {
-    color: @tempvar;
-  }
-  &.normal.skript {
-    color: @variable;
-  }
-  &.exprwrap.skript {
-    color: @exprwrap;
+  &.skript {
+    &.temp {
+      color: @tempvar;
+    }
+    &.normal {
+      color: @variable;
+    }
+    &.exprwrap {
+      color: @exprwrap;
+    }
+    &.brackets {
+      color: @brackets;
+    }
+    &.option {
+      color: @option
+    }
   }
 
   &.interpolation {
@@ -264,7 +283,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @purple;
 
-  &.quoted.double.skript {
+  &.skript.quoted.double {
     color: @text;
   }
 
@@ -285,6 +304,10 @@ atom-text-editor .search-results .marker.current-result .region,
   &.definition {
     &.comment {
       color: @light-gray;
+
+      &.skript.line.disabled {
+        color: @comment;
+      }
     }
 
     &.string,
@@ -335,7 +358,8 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @blue;
   }
 
-  &.name.class, &.name.type.class {
+  &.name.class,
+  &.name.type.class {
     color: @light-orange;
   }
 
@@ -394,7 +418,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @purple;
   }
 
-  &.deleted {
+  &.feted {
     color: @red;
   }
 
