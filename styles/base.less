@@ -5,7 +5,7 @@ atom-text-editor, :host {
   color: @syntax-text-color;
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: @syntax-background-color;
   }
 
   .indent-guide {
@@ -189,6 +189,16 @@ atom-text-editor .search-results .marker.current-result .region,
       &.effect {
         &.main {
           color: @effect;
+        }
+      }
+      &.condition {
+        &.main {
+          color: @condition;
+        }
+      }
+      &.expression {
+        &.main {
+          color: @expression;
         }
       }
     }

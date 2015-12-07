@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/tim740/SkriptDark-Syntax",
+  "repository": "https://github.com/Skript-Atom/SkriptDark-Syntax",
   "license": "GNU General Public License v3.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
