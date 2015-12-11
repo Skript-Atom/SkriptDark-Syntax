@@ -180,7 +180,7 @@ atom-text-editor .search-results .marker.current-result .region,
       &.skrayfall.skript,
       &.skrpg.skript,
       &.umbaska.skript,
-      &.wildskript.skript,
+      &.wildsk.skript,
       &.main.skript {
         color: @event;
         text-decoration: underline;
@@ -209,27 +209,9 @@ atom-text-editor .search-results .marker.current-result .region,
       &.skstuff.skript,
       &.spectatehook.skript,
       &.umbaska.skript,
-      &.wildskript.skript,
+      &.wildsk.skript,
       &.main.skript {
         color: @effect;
-      }
-    }
-    &.condition {
-      &.authmeskaddon.skript,
-      &.piratesk.skript,
-      &.randomsk.skript,
-      &.skriptevolved.skript,
-      &.skaction.skript,
-      &.skquery.skript,
-      &.skrambled.skript,
-      &.skrayfall.skript,
-      &.skrpg.skript,
-      &.skstuff.skript,
-      &.spectatehook.skript,
-      &.umbaska.skript,
-      &.wildskript.skript,
-      &.main.skript {
-        color: @condition;
       }
     }
     &.expression {
@@ -244,9 +226,27 @@ atom-text-editor .search-results .marker.current-result .region,
       &.skstuff.skript,
       &.spectatehook.skript,
       &.umbaska.skript,
-      &.wildskript.skript,
+      &.wildsk.skript,
       &.main.skript {
         color: @expression;
+      }
+    }
+    &.condition {
+      &.authmeskaddon.skript,
+      &.piratesk.skript,
+      &.randomsk.skript,
+      &.skevolved.skript,
+      &.skaction.skript,
+      &.skquery.skript,
+      &.skrambled.skript,
+      &.skrayfall.skript,
+      &.skrpg.skript,
+      &.skstuff.skript,
+      &.spectatehook.skript,
+      &.umbaska.skript,
+      &.wildsk.skript,
+      &.main.skript {
+        color: @condition;
       }
     }
   }
@@ -324,7 +324,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @purple;
 
-  &.quoted.double.skript {
+  &.text.skript {
     color: @text;
   }
 
