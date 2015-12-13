@@ -104,81 +104,20 @@
     }
     &.addon {
       &.event {
-        &.extrassk.skript,
-        &.skaction.skript,
-        &.skquery.skript,
-        &.skrambled.skript,
-        &.skrayfall.skript,
-        &.skrpg.skript,
-        &.umbaska.skript,
-        &.wildsk.skript,
-        &.main.skript {
-          color: @event;
-          text-decoration: underline;
-        }
+        color: @event;
+        text-decoration: underline;
       }
       &.type {
-        &.randomsk.skript,
-        &.skquery.skript,
-        &.skrambled.skript,
-        &.skrayfall.skript,
-        &.skrpg.skript,
-        &.skstuff.skript,
-        &.main.skript {
-          color: @types;
-        }
+        color: @types;
       }
       &.condition {
-        &.authmeskaddon.skript,
-        &.piratesk.skript,
-        &.randomsk.skript,
-        &.skevolved.skript,
-        &.skaction.skript,
-        &.skquery.skript,
-        &.skrambled.skript,
-        &.skrayfall.skript,
-        &.skrpg.skript,
-        &.skstuff.skript,
-        &.spectatehook.skript,
-        &.umbaska.skript,
-        &.wildsk.skript,
-        &.main.skript {
-          color: @condition;
-        }
+        color: @condition;
       }
       &.effect {
-        &.extrassk.skript,
-        &.piratesk.skript,
-        &.randomsk.skript,
-        &.skaction.skript,
-        &.skquery.skript,
-        &.skrambled.skript,
-        &.skrayfall.skript,
-        &.skrpg.skript,
-        &.skstuff.skript,
-        &.spectatehook.skript,
-        &.umbaska.skript,
-        &.wildsk.skript,
-        &.main.skript {
-          color: @effect;
-        }
+        color: @effect;
       }
       &.expression {
-        &.extrassk.skript,
-        &.piratesk.skript,
-        &.randomsk.skript,
-        &.skaction.skript,
-        &.skquery.skript,
-        &.skrambled.skript,
-        &.skrayfall.skript,
-        &.skrpg.skript,
-        &.skstuff.skript,
-        &.spectatehook.skript,
-        &.umbaska.skript,
-        &.wildsk.skript,
-        &.main.skript {
-          color: @expression;
-        }
+        color: @expression;
       }
     }
   }
@@ -207,16 +146,12 @@
   .string.text.skript {
     color: @text;
   }
-  .punctuation {
-    &.definition {
-      &.comment {
-        &.comment.hash.skript {
-          color: @comment;
-        }
-        &.comment.mark.skript{
-          color: @comment-mark;
-        }
-      }
+  &.comment {
+    &.hash.skript {
+      color: @comment;
+    }
+    &.mark.skript{
+      color: @comment-mark;
     }
   }
 }
